@@ -8,7 +8,7 @@ import javax.ws.rs.core.Response;
 @Path("/author_repository")
 public class AuthorRepository {
     @GET
-    @Path("/author/{authorId}")
+    @Path("/{authorId}")
     public Response author(@PathParam("authorId") int authorId) {
     	return Response.noContent().status(401).build();
     }
