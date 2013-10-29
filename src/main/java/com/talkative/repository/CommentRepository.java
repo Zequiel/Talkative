@@ -16,7 +16,7 @@ public class CommentRepository {
     
     @POST
     public Response addComment(String message){
-    	return Response.noContent().status(202).build();
+    	return Response.noContent().status(400).build();
     }
 
 }
