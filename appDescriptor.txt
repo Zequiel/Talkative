@@ -1,0 +1,24 @@
+{appUrl}/editors/{EditorId}/articles/{ArticleURL}/comments/{CommentID}
+
+	{appUrl}/editors
+		==> Class EditorRessource
+
+	{appUrl}/editors/{EditorId}
+		==> EditorRessource.getEditor()
+
+	{appUrl}/editors/{EditorId}/articles
+		==> getArticleRessource()
+
+	{appUrl}/editors/{EditorId}/articles/{ArticleURL}
+		==> PUT : addEditorArticle()
+		==> DELETE : deleteEditorArticle()
+
+	{appUrl}/editors/{EditorId}/articles/{ArticleURL}/comments
+		==> GET : getArticleComments()
+		==> PUT : addArticleComments()
+		==> DELETE ?
+
+	{appUrl}/editors/{EditorId}/articles/{ArticleURL}/comments/{CommentID}
+		==> GET : getArticleComment()
+		==> PUT : editArticleComment()
+		==> DELETE : deleteArticleComment()
